@@ -4,7 +4,7 @@
     <a>https://cerbymask.io</a> - <a>https://t.me/cerbymask</a>
     </p>
     <h1 style="margin-top: -20px;text-align: center;border-bottom: none;">CerbyMask</h1>
-    <p style="margin-top: -20px;font-size:10px;text-align: center;border-bottom: none;">A CerbyMask Library to interact with the Radix Library</p>
+    <p style="margin-top: -20px;font-size:10px;text-align: center;border-bottom: none;">cerbymask-lib - CerbyMask Library to interact with the Radix Library</p>
 </p>
 
 
