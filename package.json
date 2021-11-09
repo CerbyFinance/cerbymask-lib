@@ -1,6 +1,6 @@
 {
-  "name": "cerbymask-lib",
-  "version": "1.0.0",
+  "name": "@cerbymask/cerbymask-lib",
+  "version": "1.0.1",
   "description": "A CerbyMask library to interact with Radix Ledger",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -16,6 +16,12 @@
   "devDependencies": {
     "typescript": "^4.4.4"
   },
-  "dependencies": {
-  }
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CerbyMask/cerbymask-lib.git"
+  },
+  "bugs": {
+    "url": "https://github.com/CerbyMask/cerbymask-lib/issues"
+  },
+  "homepage": "https://cerbymask.io"
 }

@@ -1,5 +1,5 @@
 <p align="center">
-    <img src="public/android-chrome-512x512.png" style="width:200px;">
+    <img src="public/android-chrome-512x512.png" wdith="200px">
     <p align="center">
     <a>https://cerbymask.io</a> - <a>https://t.me/cerbymask</a>
     </p>
@@ -11,7 +11,7 @@
 # Install
 
 ```bash
-$ npm install cerbymask-lib
+$ npm install @cerbymask/cerbymask-lib
 ```
 # Getting Started 
 
