@@ -1,6 +1,6 @@
 
 declare module CerbymaskLib {
-    function submitTransaction()
+    function submitTransaction(transaction: TransactionFieldsT)
 }
 
 export interface RequestT {
@@ -14,7 +14,7 @@ export interface TransactionFieldsT {
     to: string;
     amount: string;
     rri: string;
-    token: number;
+    token?: number;
 }
 
 export interface NetworkT {
