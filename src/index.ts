@@ -1,5 +1,6 @@
 
 declare module CerbymaskLib {
+    function connect()
     function submitTransaction(transaction: TransactionFieldsT)
 }
 
