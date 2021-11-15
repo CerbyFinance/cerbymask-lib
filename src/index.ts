@@ -1,9 +1,9 @@
-
-declare module CerbymaskLib {
-    function connect()
-    function submitTransaction(transaction: TransactionFieldsT)
+export interface CerbymaskLib extends Window {
+    cerbymask: {
+        connect: Function,
+        submitTransaction(transaction: TransactionFieldsT): Function;
+    }
 }
-
 export interface RequestT {
     title: string;
     data: any;
@@ -54,6 +54,4 @@ export interface StakeT {
     amount: string;
 }
 
-export const lib = CerbymaskLib
-
-export default lib
+export default CerbymaskLib

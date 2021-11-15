@@ -8,7 +8,7 @@
     "/dist"
   ],
   "scripts": {
-    "build": "babel src --extensions '.ts' --out-dir dist --presets=@babel/preset-typescript --plugins=@babel/plugin-transform-modules-commonjs && browserify dist -o dist/cerbymask.js && rm -rf dist/index.js",
+    "build": "babel src --extensions '.ts' --out-dir dist --presets=@babel/preset-typescript --plugins=@babel/plugin-transform-modules-commonjs",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
