@@ -33,19 +33,21 @@ In order to build the extension, execute:
 $ npm run build
 ```
 
-## API
+# API
 
 The following table describes the interface containing the functions which are injected in runtime - these functions are accessible by simply using the instance of `window.cerbymask`
 
-### Callbacks
-Every function call is expected to return an event in case the specific function/method has been fully performed - e.g. `onClientConnect` is called once the user has allowed the web application to `connect()`.
+## Callbacks
+Every function call returns an event in case the specific function/method has been fully performed - e.g. `onClientConnect` is called once the user has allowed the web application to `connect()`. These events are emitted using <a target="_blank" href="https://nodejs.org/api/events.html">NodeJS Event Emitter</a>
 
-### Middleware
+## Middleware
 In case the web applications performs a function call without having explicit permission, the background worker replies back with `false` as response.
 
 Checkout an example <a target="_blank" href="https://github.com/CerbyMask/cerbymask-react-integration-example/blob/master/src/App.tsx">here</a>.
 
+## Functions
 | Function          | Event Callback    | Description |
-| :-----------:       | :-----------:       | :----------- |
-| connect           | onClientConnect   | Performs a request to the extension to allow the current client <br>to communicate to the background worker |
+| :-----------       | :-----------       | :----------- |
+| connect           | onClientConnect   | Performs a request to the extension to allow the current client to communicate to the background worker |
 | validateWallet    | onValidateWallet  |  Validate if the user contains a wallet |
+| submitTransaction    | onApproveTransaction  |  Perform a transaction via CerbyMask |
