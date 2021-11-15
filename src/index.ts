@@ -54,4 +54,4 @@ export interface StakeT {
     amount: string;
 }
 
-export default CerbymaskLib
+export default CerbymaskWindow
