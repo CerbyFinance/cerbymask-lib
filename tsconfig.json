@@ -1,15 +1,16 @@
 {
-    "compilerOptions": {
-      "module": "commonjs",
-      "target": "es2015",
-      "declaration": true,
-      "outDir": "./dist",
-      "typeRoots": [
-        "src/",
-      ]
-    },
-    "include": [
-      "src/**/*"
-    ]
-  }
-  
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es2015",
+    "declaration": true,
+    "outDir": "./dist",
+    "typeRoots": [
+      "src/",
+    ],
+    "emitDeclarationOnly": true,
+    "isolatedModules": true
+  },
+  "include": [
+    "src/**/*"
+  ]
+}

@@ -8,12 +8,18 @@
     "/dist"
   ],
   "scripts": {
-    "build": "tsc",
+    "build": "babel src --extensions '.ts' --out-dir dist --presets=@babel/preset-typescript --plugins=@babel/plugin-transform-modules-commonjs && browserify dist -o dist/cerbymask.js && rm -rf dist/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@babel/cli": "^7.16.0",
+    "@babel/core": "^7.16.0",
+    "@babel/plugin-transform-modules-commonjs": "^7.16.0",
+    "@babel/preset-typescript": "^7.16.0",
+    "browserify": "^17.0.0",
+    "jest": "^27.3.1",
     "typescript": "^4.4.4"
   },
   "repository": {
