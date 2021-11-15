@@ -1,4 +1,4 @@
-export interface CerbymaskLib extends Window {
+export interface CerbymaskWindow extends Window {
     cerbymask: {
         connect: Function,
         submitTransaction(transaction: TransactionFieldsT): Function;
