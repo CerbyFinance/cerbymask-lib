@@ -33,12 +33,19 @@ In order to build the extension, execute:
 $ npm run build
 ```
 
-## Tests
+## API
 
-Unit tests are developed using Jest.
+The following table describes the interface containing the functions which are injected in runtime - these functions are accessible by simply using the instance of `window.cerbymask`
 
-In order to run tests, execute:
+### Callbacks
+Every function call is expected to return an event in case the specific function/method has been fully performed - e.g. `onClientConnect` is called once the user has allowed the web application to `connect()`.
 
-```bash
-$ npm run test
-```
+### Middleware
+In case the web applications performs a function call without having explicit permission, the background worker replies back with `false` as response.
+
+Checkout an example <a target="_blank" href="https://github.com/CerbyMask/cerbymask-react-integration-example/blob/master/src/App.tsx">here</a>.
+
+| Function          | Event Callback    | Description |
+| :-----------:       | :-----------:       | :----------- |
+| connect           | onClientConnect   | Performs a request to the extension to allow the current client <br>to communicate to the background worker |
+| validateWallet    | onValidateWallet  |  Validate if the user contains a wallet |
