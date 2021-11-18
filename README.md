@@ -3,21 +3,21 @@
     <p align="center">
         <a href="https://cerbymask.io">https://cerbymask.io</a> - <a href="https://t.me/cerbymask">https://t.me/cerbymask</a>
     </p>
-    <h1 style="margin-top: -20px;text-align: center;border-bottom: none;">CerbyMask</h1>
+    <h1 style="margin-top: -20px;text-align: center;border-bottom: none;">🐺 CerbyMask</h1>
     <p style="margin-top: -20px;font-size:10px;text-align: center;border-bottom: none;">CerbyMask Library to interact with the Radix Ledger</p>
 </p>
 
 
-# Install
+# 🔥 Install
 
 ```bash
 $ npm install @cerbymask/cerbymask-lib
 ```
-# Getting Started 
+# 🐺 Getting Started 
 
 This library is a wrapper to the object `window.cerbymask` that is made available in webpage load time.
 
-## Install dependencies
+## ⚡ Install dependencies
 
 After cloning the project, navigate to the root folder and run:
 
@@ -25,7 +25,7 @@ After cloning the project, navigate to the root folder and run:
 $ npm install
 ```
 
-## Build
+## ⚡ Build
 
 In order to build the extension, execute:
 
@@ -33,19 +33,19 @@ In order to build the extension, execute:
 $ npm run build
 ```
 
-# API
+# 🎄 API
 
 The following table describes the interface containing the functions which are injected in runtime - these functions are accessible by simply using the instance of `window.cerbymask`
 
-## Callbacks
+## ⚡ Callbacks
 Every function call returns an event in case the specific function/method has been fully performed - e.g. `onClientConnect` is called once the user has allowed the web application to `connect()`. These events are emitted using <a target="_blank" href="https://nodejs.org/api/events.html">NodeJS Event Emitter</a>
 
-## Middleware
+## ⚡ Middleware
 In case the web applications performs a function call without having explicit permission, the background worker replies back with `false` as response.
 
 Checkout an example <a target="_blank" href="https://github.com/CerbyMask/cerbymask-react-integration-example/blob/master/src/App.tsx">here</a>.
 
-## Functions
+## ⚡ Functions
 | Function          | Event Callback    | Description |
 | :-----------       | :-----------       | :----------- |
 | connect           | onClientConnect   | Performs a request to the extension to allow the current client to communicate to the background worker |
