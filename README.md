@@ -1,7 +1,7 @@
 <p align="center">
     <img src="public/cerby.png" wdith="200px">
     <p align="center">
-    <a>https://cerbymask.io</a> - <a>https://t.me/cerbymask</a>
+        <a href="https://cerbymask.io">https://cerbymask.io</a> - <a href="https://t.me/cerbymask">https://t.me/cerbymask</a>
     </p>
     <h1 style="margin-top: -20px;text-align: center;border-bottom: none;">CerbyMask</h1>
     <p style="margin-top: -20px;font-size:10px;text-align: center;border-bottom: none;">CerbyMask Library to interact with the Radix Ledger</p>
