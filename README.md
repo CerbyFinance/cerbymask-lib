@@ -1,5 +1,5 @@
 <p align="center">
-    <img src="public/android-chrome-192x192.png" wdith="200px">
+    <img src="public/cerby.png" wdith="200px">
     <p align="center">
     <a>https://cerbymask.io</a> - <a>https://t.me/cerbymask</a>
     </p>
