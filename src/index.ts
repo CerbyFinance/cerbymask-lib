@@ -1,7 +1,11 @@
+import { EventEmitter } from "stream";
+
 export interface CerbymaskWindow extends Window {
     cerbymask: {
         connect: Function,
-        submitTransaction(transaction: TransactionFieldsT): Function;
+        validateWallet: Function,
+        submitTransaction(transaction: TransactionFieldsT): Function,
+        events: EventEmitter;
     }
 }
 export interface RequestT {
