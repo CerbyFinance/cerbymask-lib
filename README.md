@@ -49,5 +49,6 @@ Checkout an example <a target="_blank" href="https://github.com/CerbyMask/cerbym
 | Function          | Event Callback    | Description |
 | :-----------       | :-----------       | :----------- |
 | connect           | onClientConnect   | Performs a request to the extension to allow the current client to communicate to the background worker |
-| validateWallet    | onValidateWallet  |  Validate if the user contains a wallet |
+| validateWallet    | onValidateWallet  |  Validate if the user contains a wallet, we recommend to display 'Connect' whenever validation returns false |
 | submitTransaction    | onApproveTransaction  |  Perform a transaction via CerbyMask |
+| events    | -  |  NodeJS Event Emitter object where you attach `.on("<event callback>")` from previous function calls |
