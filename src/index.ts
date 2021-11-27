@@ -5,6 +5,7 @@ export interface CerbymaskWindow extends Window {
         connect: Function,
         validateWallet: Function,
         submitTransaction(transaction: TransactionFieldsT): Function,
+        getPublicAddresses: Function,
         events: EventEmitter;
     }
 }
