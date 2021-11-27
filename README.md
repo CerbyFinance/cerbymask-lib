@@ -51,4 +51,5 @@ Checkout an example <a target="_blank" href="https://github.com/CerbyMask/cerbym
 | connect           | onClientConnect   | Performs a request to the extension to allow the current client to communicate to the background worker |
 | validateWallet    | onValidateWallet  |  Validate if the user contains a wallet, we recommend to display 'Connect' whenever validation returns false |
 | submitTransaction    | onApproveTransaction  |  Perform a transaction via CerbyMask |
+| getPublicAddresses    | onPublicAddresses  |  Get client available public addresses |
 | events    | -  |  NodeJS Event Emitter object where you attach `.on("<event callback>")` from previous function calls |
